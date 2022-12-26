@@ -198,7 +198,7 @@ void SimpleEQAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juc
     auto& rightLowCut = rightChain.get<ChainPositions::LowCut>();
 
     updateCutFilter(leftLowCut, lowCutCoefficients, chainSettings.lowCutSlope);
-    updateCutFilter(leftLowCut, lowCutCoefficients, chainSettings.lowCutSlope);
+    updateCutFilter(rightLowCut, lowCutCoefficients, chainSettings.lowCutSlope);
 
    
 
