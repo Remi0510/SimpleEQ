@@ -60,6 +60,8 @@ private:
 
     std::vector<juce::Component*> getComps();
 
+    MonoChain monochain;
+
 
 
 
