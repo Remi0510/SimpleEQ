@@ -47,6 +47,17 @@ private:
         highCutSlopeSlider;
 
 
+    using APVTS = juce::AudioProcessorValueTreeState;
+    using Attachement = APVTS::SliderAttachment;
+
+    Attachement peakFreqSliderAttachment,
+        peakGainSliderAttachment,
+        peakQualitySliderAttachment,
+        lowCutFreqSliderAttachment,
+        highCutFreqSliderAttachment,
+        lowCutSlopeSliderAttachment,
+        highCutSlopeSliderAttachment;
+
     std::vector<juce::Component*> getComps();
 
 
